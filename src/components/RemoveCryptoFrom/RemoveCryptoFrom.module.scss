@@ -1,0 +1,28 @@
+@import '../../style/colors';
+
+.wrapper {
+  max-height: 63vh;
+  overflow: auto;
+
+  h1, p {
+    color: $darkBlue;
+  }
+
+  .itemWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 18px;
+  }
+}

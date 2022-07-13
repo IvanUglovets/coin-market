@@ -1,0 +1,39 @@
+@import '../../style/colors';
+
+.tableWrapper {
+  max-width: 1000px;
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 640px;
+  width: 100%;
+
+  thead, tbody {
+    table-layout: fixed;
+  }
+
+  th {
+    border-bottom: 1px solid $white;
+  }
+
+  td:hover {
+    cursor: pointer;
+  }
+
+  tr {
+    transition: all 0.3s linear;
+  }
+
+  tr:nth-child(even) {
+    background-color: $grayDarkBlue;
+  }
+
+  tr:hover {
+    background-color: $blue;
+  }
+
+
+}
